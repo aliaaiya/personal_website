@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - AliaVerse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="topBtn">↑</button>
+</head>
+
+<script>
+  window.onload = () => document.body.classList.add('loaded');
+    function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    document.getElementById('liveClock').textContent = `🕒 ${hours}:${minutes}:${seconds}`;
+  }
+</script>
+
+<body>
+  <div class="glitter-star" style="top: 80px; left: 200px;"></div>
+  <div class="glitter-star" style="top: 300px; left: 90px;"></div>
+  <div class="glitter-star" style="top: 400px; left: 70%;"></div>
+
+ <div class="container">
+  <img src="kk.jpg" alt="yaya" class="photo" />
+  <h1>👤 About Me</h1>
+  <p class="subheading">Get to know me</p>
+
+  <div class="nav-buttons">
+    <a href="home.html"><button>Home</button></a>
+    <a href="about.html"><button class="active">About</button></a>
+    <a href="education.html"><button>Education</button></a>
+    <a href="experience.html"><button>Experience</button></a>
+    <a href="skills.html"><button>Skills</button></a>
+    <a href="quotes.html"><button>Quotes</button></a>
+    <a href="contact.html"><button>Contact</button></a>
+  </div>
+
+  <div class="section active">
+    <h2>Hey there! Welcome to my space!</h2>
+
+    <div class="para-box">
+      <p>I’m <strong>Alia Najihah binti Razali</strong>. I’m a girl who’s full of life, ideas, and passion. I love talking, creating, and connecting with people!</p>
+  </div>
+
+    <div class="para-box">
+      <p>Currently, I’m studying Information Management at UiTM Machang.
+      But learning isn’t just in the classroom. I’m always discovering new things through people, stories, and experiences.</p>
+    </div>
+
+    <div class="para-box">
+      <p>I enjoy being part of exciting projects, making aesthetic content, and trying new tools or designs just for fun.
+      Canva, TikTok, digital planning. I’m all in!</p>
+    </div>
+
+    <div class="para-box">
+      <p>I believe in expressing myself fully.
+      Whether it’s through colors, creativity, or just showing up confidently. I want to make things feel fun and real.</p>
+
+      <p>I’m not afraid to take the lead, speak up, or share my thoughts.
+      I love cheering people on and getting inspired together.</p>
+    </div>
+
+    <div class="para-box quote-box">
+      <p><em>"Let’s make this journey bold, bright, and full of good vibes!"</em></p>
+    </div>
+
+    <div class="gallery-container">
+      <h3 class="gallery-title">📸 My Little Moments</h3>
+      <div class="about-gallery">
+        <div class="polaroid"><img src="mee.jpg" alt="Green Era" /><div class="caption">Green Era 🌿</div></div>
+        <div class="polaroid"><img src="model me.jpg" alt="Model me" /><div class="caption">Model mode 🎨</div></div>
+        <div class="polaroid"><img src="nofaceme.jpg" alt="Photo 3" /><div class="caption">Aesthetic Era</div></div>
+        <div class="polaroid"><img src="confident.jpg" alt="Photo 4" /><div class="caption">Feeling Bossy</div></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills - Alia Najihah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="topBtn">↑</button>
+  <style>
+    .quote-box {
+      background-color: #fff9ec;
+      border-left: 4px solid var(--accent);
+      padding: 20px;
+      margin: 15px 0;
+      font-style: italic;
+      color: #3b3b3b;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+    }
+
+    .quote-author {
+      text-align: right;
+      font-size: 14px;
+      margin-top: 8px;
+      font-weight: 500;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MY SKILLS</h1>
+
+    <div class="nav-buttons">
+      <a href="home.html"><button>Home</button></a>
+      <a href="about.html"><button>About</button></a>
+      <a href="education.html"><button>Education</button></a>
+      <a href="experience.html"><button>Experience</button></a>
+      <a href="skills.html"><button class="active">Skills</button></a>
+      <a href="quotes.html"><button>Quotes</button></a>
+      <a href="contact.html"><button>Contact</button></a>
+    </div>
+
+<div class="section active">
+  <h2>💼 Skills That Define Me</h2>
+
+<div class="skills-grid">
+    <div class="skill-card">
+      <img src="images/publicspeaking.jpg" alt="Public Speaking" class="skill-photo" />
+      <div class="skill-text">
+        <h3>🎤 Public Speaking & Presentation</h3>
+        <p>I bring energy to the room and confidence to the mic, whether it’s a class presentation or leading a group.</p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="images/leadership.jpg" alt="Teamwork" class="skill-photo" />
+      <div class="skill-text">
+        <h3>🤝 Teamwork & Leadership</h3>
+        <p>I love collaborating, connecting people, and guiding a team toward shared goals with good vibes always.</p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="images/content.jpg" alt="Content Creation" class="skill-photo" />
+      <div class="skill-text">
+        <h3>💡 Creative Content Creation</h3>
+        <p>From Canva designs to video edits, I enjoy transforming ideas into something colorful, catchy, and engaging.</p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="images/organizingdata.jpg" alt="Data Organization" class="skill-photo" />
+      <div class="skill-text">
+        <h3>📊 Organizing Data, Creatively</h3>
+        <p>Yes, I’m fun but I’m also structured. I love tidying digital info with flair and clarity.</p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="images/meagainn.jpg" alt="Communication" class="skill-photo" />
+      <div class="skill-text">
+        <h3>🗨️ Communication Skills</h3>
+        <p>Whether face-to-face or online, I express myself clearly, warmly, and with confidence.</p>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="images/coding.jpg" alt="Web Design" class="skill-photo" />
+      <div class="skill-text">
+        <h3>🌐 Basic Web & Digital Design</h3>
+        <p>I'm hands-on with HTML, layouts, and styling. I like making things look neat, modern, and “me.”</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <script>
+    window.onload = () => document.body.classList.add('loaded');
+    function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    document.getElementById('liveClock').textContent = `🕒 ${hours}:${minutes}:${seconds}`;
+  }
+  </script>
+</body>
+</html>

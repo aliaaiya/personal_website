@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AliaVerse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+  <link rel="stylesheet" href="style.css" />
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="topBtn">↑</button>
+</head>
+
+<script>
+  window.onload = () => document.body.classList.add('loaded');
+    function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    document.getElementById('liveClock').textContent = `🕒 ${hours}:${minutes}:${seconds}`;
+  }
+</script>
+
+<body>
+  <div class="side-polaroid left-float">
+    <img src="images/reflection.jpg" alt="Left Aesthetic" />
+    <div class="caption">Self-reflection ✨</div>
+  </div>
+
+  <div class="side-polaroid right-float">
+    <img src="images/littlethings.jpg" alt="Right Aesthetic" />
+    <div class="caption">Little things 🌸</div>
+  </div>
+
+  <div class="container">
+    <h1>Welcome to My Personal Resume Website</h1>
+
+    <div class="nav-buttons">
+      <a href="home.html"><button class="active">Home</button></a>
+      <a href="about.html"><button>About</button></a>
+      <a href="education.html"><button>Education</button></a>
+      <a href="experience.html"><button>Experience</button></a>
+      <a href="skills.html"><button>Skills</button></a>
+      <a href="quotes.html"><button>Quotes</button></a>
+      <a href="contact.html"><button>Contact</button></a>
+    </div>
+
+      <div class="section-header">
+        <h2>🏠 Welcome to My Website</h2>
+        <div class="sparkle-bg"></div>
+    </div>
+
+  <div class="para-box">
+    <p>I’m <strong>Alia Najihah binti Razali</strong>, and I’m so glad you’re here. I’m at a stage in life where I’m learning, discovering, and growing. Not just in my studies, but also in who I am and who I want to become.</p>
+
+    <p>Right now, I’m balancing assignments, projects, and personal passions like designing content, reading motivational books, and exploring how technology and creativity come together. I enjoy being organized, helping others, and creating things that feel meaningful.</p>
+
+    <p>You can explore different parts of me through the tabs above. From my education to my experiences, my favorite quotes, and even a peek into my family and memories. 💛</p>
+  </div>
+
+  <div class="quote-box">
+    <p><em>“Every click tells a little story about me.”</em></p>
+  </div>
+</body>
+</html>

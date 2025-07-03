@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quotes - Alia Najihah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+    /* Style only for this page */
+    .quote-pair {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .quote-box {
+      background-color: #fff9ec;
+      border-left: 5px solid #e0b083;
+      padding: 20px;
+      font-style: italic;
+      color: #3b3b3b;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 14px;
+      flex: 1 1 45%;
+      min-width: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .quote-author {
+      text-align: right;
+      font-size: 14px;
+      margin-top: 12px;
+      font-weight: 500;
+      color: #c38b5f;
+    }
+
+    .quote-image {
+      flex: 1 1 45%;
+      max-width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: 768px) {
+      .quote-pair {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .quote-box, .quote-image {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="topBtn">↑</button>
+</head>
+<body>
+  <div class="container">
+    <h1>Words That Inspire Me</h1>
+    <p class="subheading"></p>
+
+    <div class="nav-buttons">
+      <a href="home.html"><button>Home</button></a>
+      <a href="about.html"><button>About</button></a>
+      <a href="education.html"><button>Education</button></a>
+      <a href="experience.html"><button>Experience</button></a>
+      <a href="skills.html"><button>Skills</button></a>
+      <a href="quotes.html"><button class="active">Quotes</button></a>
+      <a href="contact.html"><button>Contact</button></a>
+    </div>
+
+    <div class="section active">
+      <h2>💬 Favorite Quotes</h2>
+
+      <!-- Pair 1 -->
+      <div class="quote-pair">
+        <div class="quote-box">
+          “Success is not final, failure is not fatal: It is the courage to continue that counts.”
+          <div class="quote-author">– Winston Churchill</div>
+        </div>
+        <img src="images/coffeebreak.jpg" alt="Aesthetic book" class="quote-image" />
+      </div>
+
+      <!-- Pair 2 -->
+      <div class="quote-pair">
+        <div class="quote-box">
+          “Don’t watch the clock; do what it does. Keep going.”
+          <div class="quote-author">– Sam Levenson</div>
+        </div>
+        <img src="images/rain.jpg" alt="Aesthetic desk" class="quote-image" />
+      </div>
+
+      <!-- Pair 3 -->
+      <div class="quote-pair">
+        <div class="quote-box">
+          “The future belongs to those who believe in the beauty of their dreams.”
+          <div class="quote-author">– Eleanor Roosevelt</div>
+        </div>
+        <img src="images/matchaa.jpg" alt="Inspiring notebook" class="quote-image" />
+      </div>
+
+      <!-- Pair 4 -->
+      <div class="quote-pair">
+        <div class="quote-box">
+          “Organized information creates powerful outcomes.”
+          <div class="quote-author">– Alia Najihah</div>
+        </div>
+        <img src="images/book.jpg" alt="Minimalist planner" class="quote-image" />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.onload = () => document.body.classList.add('loaded');
+    function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    document.getElementById('liveClock').textContent = `🕒 ${hours}:${minutes}:${seconds}`;
+    }
+  </script>
+</body>
+</html>
